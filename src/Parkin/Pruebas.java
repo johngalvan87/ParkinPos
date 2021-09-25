@@ -25,7 +25,11 @@ public class Pruebas {
 		String nuevoVehiculo,tipoVehiculo,placa,horaIngreso;
 		String salidaVehiculo;
 		horaIngreso = tf.format(h);	
-		
+		System.out.println("");
+		System.out.println("####################################################################################################################################################################################################");
+		System.out.println("#!!!!****** Si es la primera vez que se ejecuta el programa en este equipo, asegurese de digitar la ruta donde se creara la base de datos del mismo, en la Clase CONSTANTES RUTA_ARCHIVO******¡¡¡¡#");
+		System.out.println("####################################################################################################################################################################################################");
+		System.out.println("");
 		operacion = Menu.menuOperaciones();
 		
 		while (operacion <4) {
@@ -53,16 +57,24 @@ public class Pruebas {
 				
 				//FACTURAR E IMPRIMIR FACTURA
 			case 2:
-				String sel = "S";
-				String impFact;
+				
+				int sel = 0;
+				String iFact;
 				vehiculo = Bd.consultarBd(Constantes.RUTA_ARCHIVOS,Constantes.BASE_DATOS);
 				System.out.println(vehiculo);
-				System.out.println("Imprime Factura: S/N \n");
-				impFactura.factura();
-						
-				operacion = 0;
+				System.out.println("¿Imprime Factura?. Digita 1 para si y 2 para no:\n 1 ==> Si\n 2 ==> No");
+				sel = s.nextInt();				
+				if (sel == 1) {	
+					
+					impFactura.factura();
+					
+					}else {	
+					
+						System.out.println("ENTRO AL ELSE");
+						operacion = 0;
 				
-				operacion = Menu.menuOperaciones();
+						operacion = Menu.menuOperaciones();
+				}
 				break;
 			
 			default:

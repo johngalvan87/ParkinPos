@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class Facturar {
 	public static void main(String[] args) {
 		
-		PlantillaFacturas factura = new PlantillaFacturas();
-		factura.factura();
+		Bdparkin factura = new Bdparkin();
+		factura.horaIngFac();
 		
 		
 	}

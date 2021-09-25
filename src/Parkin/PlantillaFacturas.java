@@ -28,9 +28,9 @@ public class PlantillaFacturas {
 			System.out.println("		!*****************************************!	");		
 			System.out.println("		!		"+razonSocial+"		  !");
 			System.out.println("		!	      Nit."+nit+"		  !");
-			System.out.println("		!	       "+telefono+"		  !");
-			System.out.println("		!	 Factura de Venta No:  	  !");
+			System.out.println("		!	      tel."+telefono+"		  !");
 			System.out.println("		!	 Direccion:"+direccion+"	  !");
+			System.out.println("		!	 Factura de Venta No:  	  !");
 			System.out.println("		!	Fecha: "+fechAct+" Hora: "+horAct+"  !");
 			System.out.println("		!=========================================!	");
 			System.out.println("		!T.Vehiculo: "+      "		Placa/doc: "+   "	  !");
