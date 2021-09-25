@@ -5,11 +5,12 @@ import java.util.List;
 import java.util.Scanner;
 
 
+
 public class Facturar {
 	public static void main(String[] args) {
 		
 		PlantillaFacturas factura = new PlantillaFacturas();
-		System.out.println(factura);
+		factura.factura();
 		
 		
 	}
